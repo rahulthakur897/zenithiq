@@ -6,13 +6,13 @@
   
   .services-banner-container {
     width: 100%;
-    height: 400px;
+    height: 300px;
     position: relative;
   }
   
   .services-banner-container>img {
     width: 100%;
-    height: 400px;
+    height: 300px;
   }
   .services-banner-container>.services-banner-content {
     display: flex;

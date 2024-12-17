@@ -88,8 +88,11 @@
   height: 100%;
   overflow: hidden;
 }
-
-.services-item p {
+.services-item a{
+  text-decoration: none;
+  color: #222;
+}
+.services-item a p {
   font-size: 1.25rem;
   padding: 1rem;
 }

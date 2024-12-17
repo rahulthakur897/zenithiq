@@ -18,6 +18,9 @@ export function Footer() {
         </div>
         <div className="footer-links">
           <ul className="footer-links">
+          <li>
+              <Link to="/services">Services</Link>
+            </li>
             <li>
               <Link to="/contact">Contact</Link>
             </li>
@@ -41,7 +44,7 @@ export function Footer() {
         </div>
       </div>
       <div className="footer-bar">
-        <p>&copy; 2024 Zenithiq Technology and Consultancy LLC. All rights reserved.</p>
+        <p>&copy; 2024 Zenithiq Technology & Consultancy LLC. All rights reserved.</p>
         <div className="footer-container">
           <p>Terms of Use | Privacy Policy</p>
         </div>

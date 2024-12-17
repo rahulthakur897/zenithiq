@@ -9,21 +9,21 @@ export default function Home() {
       heading: "Custom Software Solutions",
       description:
         "Every business is unique, and so are its software needs. Right Arc specializes in developing bespoke software solutions tailored to meet the specific demands of your business. Our custom-built software enhances productivity, optimizes processes, and ensures seamless integration with your existing systems, enabling you to stay ahead of the curve in today’s competitive market.",
-      image: "assets/image/banner.jpg",
+      image: "assets/image/service-1.jpg",
     },
     {
       id: 2,
       heading: "IT Staffing & Services",
       description:
         "Today’s rapidly evolving tech landscape, finding the right talent can be a challenge. Right Arc offers comprehensive IT staffing solutions, ensuring that your business has access to skilled professionals who align with your technical and cultural needs. Whether you need short-term assistance or permanent hires, we deliver IT experts who can seamlessly integrate into your team and drive your projects forward.",
-      image: "assets/image/banner.jpg",
+      image: "assets/image/service-2.jpg",
     },
     {
       id: 3,
       heading: "Managed IT Services",
       description:
         "Managing IT infrastructure can be overwhelming, especially as your business grows. With Right Arc’s Managed IT Services, we take the complexity out of IT management, offering proactive support, monitoring, and optimization of your systems. Our team ensures that your technology infrastructure is secure, efficient, and scalable, allowing you to focus on what matters most – running your business.",
-      image: "assets/image/banner.jpg",
+      image: "assets/image/service-3.jpg",
     },
   ];
 
