@@ -1,0 +1,143 @@
+.home-page {
+  height: calc(100vh - 80px);
+  margin-top: 80px;
+  width: 100%;
+}
+.home-page {
+  height: calc(100vh - 80px);
+  margin-top: 80px;
+  width: 100%;
+}
+.banner-container {
+  width: 100%;
+  height: 60%;
+  position: relative;
+  background-attachment: fixed; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner-container > .banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center content horizontally */
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; 
+  /* left: 8%; */
+}
+.banner-container > .banner-content > h1 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 2rem;
+  width: 50%;
+}
+.banner-container > .banner-content > p {
+  font-size: 1.5rem;
+  color: white;
+  width: 50%;
+}
+.banner-container > .banner-content > .call-to-action {
+ display: flex;
+ justify-content: center;
+}
+.banner-container > .banner-content > .call-to-action button{
+  margin: 1rem;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.banner-container > .banner-content > .call-to-action button:hover{
+   background-color: #fff;
+   color: #34657f;
+}
+.box-container {
+  background-color: white;
+  padding: 2rem;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(206, 42, 41, 0.2);
+}
+
+.client-section {
+  background-color: #022054;
+}
+.client-section h2 {
+  color: #fff;
+}
+
+.client-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.client-container > .box-container {
+  margin-bottom: 0;
+  width: auto;
+}
+
+@media (max-width: 576px) {
+  .banner-container {
+    height: 300px;
+  }
+
+  .banner-container > .banner-content {
+    padding: 0 1rem;
+  }
+
+  .banner-container > .banner-content > h3 {
+    font-size: 12px;
+  }
+
+  .banner-container > .banner-content > h1 {
+    font-size: 20px;
+  }
+  .banner-container > img {
+    height: 300px;
+  }
+
+  .section-content {
+    margin-top: 1rem;
+  }
+
+  .dark-section {
+    margin-top: 1rem;
+  }
+
+  .section-content h2 {
+    padding: 1rem;
+  }
+
+  .light-section {
+    padding: 1rem;
+  }
+
+  .scrollable-content {
+    margin-top: 0;
+  }
+
+  .client-container {
+    flex-direction: column;
+  }
+
+  .client-section {
+    background-size: cover;
+  }
+  .client-container > .box-container {
+    margin-bottom: 1rem;
+    width: 90%;
+  }
+}

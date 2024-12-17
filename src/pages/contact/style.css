@@ -1,0 +1,129 @@
+.contact-page {
+  height: calc(100vh - 80px);
+  margin-top: 80px;
+  width: 100%;
+}
+
+.contact-banner-container {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+.contact-banner-container>img {
+  width: 100%;
+  height: 300px;
+}
+.contact-banner-container>.contact-banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.contact-banner-container>.contact-banner-content>ul {
+  font-size: 38px;
+  font-weight: 500;
+  color: white;
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.contact-banner-container>.contact-banner-content>ul>li>a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1.5em 3em;
+  gap: 1.5rem;
+}
+
+.contact-option .icon {
+  font-size: 2rem;
+  color: #29535c;
+  /* Customize as needed */
+  margin-bottom: 0.5rem;
+}
+.get-in-touch{
+  display: flex;
+  flex-direction: row;
+}
+.title{
+  padding-top: 2rem;
+  width: 40%;
+}
+.contact-options .contact-option {
+    flex-shrink: 1;
+    flex-basis: calc(30% - 1.5rem);
+    padding: 1.5em 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.contact-options .contact-option i {
+  font-size: 1.8rem;
+  color: #00283c;
+}
+.get-in-touch p,
+.contact-options .contact-option h3 {
+  font-family: "Alata", sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.get-in-touch p,
+.contact-options .contact-option p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+
+.contact-form-container {
+  display: flex;
+  background-color: #f4f4f4;
+  justify-content: space-evenly;
+}
+
+.location {
+  width: 90%;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+}
+
+@media (max-width: 576px) {
+  .contact-banner-container {
+    height: 270px;
+  }
+  .contact-banner-container>.contact-banner-content>ul{
+    font-size: 25px;
+  }
+  .contact-options{
+    justify-content: left;
+  }
+  .contact-options .contact-option{
+    flex-basis: auto;
+  }
+  .get-in-touch {
+    display: block;
+  }
+  .title {
+    width: 100%;
+    padding: 1rem;
+  }
+}

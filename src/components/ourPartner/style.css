@@ -1,0 +1,22 @@
+.image-container {
+  flex: 0 0 auto;
+  margin: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container img {
+  max-width: 80%;
+  height: auto;
+  text-align: center;
+}
+@media (max-width: 576px) {
+  .image-container img {
+    max-width: 85%;
+  }
+
+  .image-container {
+    margin: 0;
+  }
+}

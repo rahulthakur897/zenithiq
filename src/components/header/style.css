@@ -1,0 +1,157 @@
+.main-continer {
+  background-color: #fff;
+  box-shadow: 0px 0px 4px 0px black;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 9;
+}
+
+.main-continer figure {
+  /* display: flex;
+  align-items: center; */
+  margin: 0;
+}
+
+.main-continer .nav-logo a {
+  text-decoration: none;
+  color: #444444;
+}
+
+.main-continer .nav-logo img {
+  width: 50px;
+  height: 40px;
+}
+
+.main-continer .nav-logo figcaption {
+  font-size: 10px;
+  font-weight: bold;
+  color: #19272a;
+  text-align: center;
+}
+
+.main-continer ul.nav-links {
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+}
+
+.main-continer ul.nav-links li {
+  list-style: none;
+  position: relative;
+}
+
+.main-continer ul.nav-links > li > a {
+  color: #444444;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Gap between text and icon */
+}
+
+.main-continer ul.nav-links > li > a:hover {
+  color: #2ca6a2;
+}
+
+nav .nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav .nav-buttons a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+nav .nav-buttons a:hover {
+  color: #fb8500;
+}
+
+nav .nav-buttons .nav-btn {
+  background-color: #fb8500;
+  color: #444444;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+nav .nav-buttons .nav-btn:hover {
+  color: #444444;
+}
+#menu-icon {
+  display: none;
+}
+#mobilemenu {
+  display: none;
+}
+@media (max-width: 576px) {
+  .main-continer {
+    justify-content: space-between;
+    padding: 0 0.5rem;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .main-continer .nav-logo img {
+    width: 200px;
+    height: 30px;
+  }
+
+  #menu-icon {
+    color: rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 0, 0, 0.1);
+    height: 44px;
+    width: 40px;
+    display: block;
+    position: fixed;
+    right: 10px;
+    top: 18px;
+    z-index: 10; /* Increase this to ensure it’s on top */
+    cursor: pointer;
+  }
+
+  #mobilemenu {
+    position: fixed;
+    background: #fff;
+    color: #000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    right: 25px;
+    top: 62px;
+    z-index: 9;
+    padding-right: 1rem;
+  }
+
+  #mobilemenu ul {
+    list-style: none;
+  }
+
+  #mobilemenu ul li {
+    margin-bottom: 1rem;
+    color: #000;
+  }
+
+  #mobilemenu ul li a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  #mobilemenu ul li a.active {
+    color: #003c7a;
+    text-decoration: underline;
+    font-weight: 600;
+  }
+}

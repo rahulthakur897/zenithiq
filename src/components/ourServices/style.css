@@ -1,0 +1,64 @@
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.service-card {
+  padding: 1rem;
+  width: 15%;
+  margin: 1rem;
+  text-align: center;
+  transition: transform 0.2s;
+}
+.service-content {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+.service-card p {
+  border: 1px solid rgb(206, 42, 41);
+  padding: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+}
+.service-card h5 {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: #ce2a29;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin: 0;
+}
+.service-image:hover {
+  transform: scale(1.2);
+}
+
+.service-card h3 {
+  font-size: 24px;
+}
+
+.service-image {
+  border-radius: 50%;
+  width: 85%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.service-content div {
+  width: 1px;
+  height: 75px;
+  background: #ce2a29;
+}
+@media (max-width: 576px) {
+  .services-container {
+    display: block;
+  }
+  .service-card {
+    width: 100%;
+    margin: 0;
+  }
+}
