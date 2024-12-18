@@ -1,6 +1,7 @@
 .contactform{
   display: flex;
   justify-content: center;
+  padding-top: 2rem;
 }
 .form-content{
   width: 60%;
@@ -43,9 +44,8 @@ form {
     height: 200px;
   }
   
- 
   .button{
-    margin: 1rem;
+    margin: 1rem 6.5rem;
     background: #022054;
     border: 2px solid #022054;
     color: #fff;

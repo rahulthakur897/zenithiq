@@ -41,21 +41,28 @@
   text-decoration: none;
 }
 
-.contact-options {
+.contact-details {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 1.5em 3em;
-  gap: 1.5rem;
+  justify-content: space-around;
+  text-align: left;
 }
 
-.contact-option .icon {
-  font-size: 2rem;
-  color: #29535c;
-  /* Customize as needed */
-  margin-bottom: 0.5rem;
+.contact-details .telephone {
+  border-left: 1px solid #d9d9d9;
+  border-right: 1px solid #d9d9d9;
+  padding: 1rem 6rem;
 }
+.contact-line{
+  padding-top: 1rem;
+}
+
+.contact-details .icon {
+  color: #fcb900;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 1rem;
+}
+
 .get-in-touch{
   display: flex;
   flex-direction: row;
@@ -63,6 +70,7 @@
 .title{
   padding-top: 2rem;
   width: 40%;
+  border-right: 1px solid #d9d9d9;
 }
 .contact-options .contact-option {
     flex-shrink: 1;
@@ -119,6 +127,16 @@ iframe {
   .contact-options .contact-option{
     flex-basis: auto;
   }
+  .contact-details{
+    display: block;
+  }
+  .contact-line {
+    text-align: center;
+    padding-top: 3rem;
+}
+.contact-details .telephone {
+  text-align: center;
+}
   .get-in-touch {
     display: block;
   }

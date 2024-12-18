@@ -4,19 +4,7 @@ import { Footer, FormComponent, Header } from "../../components";
 import { FaPhone } from "react-icons/fa6";
 import { MdOutlineMail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
-
 import "./style.css";
-
-function ContactOptions(props) {
-  const { icon, title, desc } = props;
-  return (
-    <div className="contact-option">
-      {icon}
-      <h3>{title}</h3>
-      <p>{desc}</p>
-    </div>
-  );
-}
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -64,25 +52,33 @@ export default function Contact() {
           </ul>
         </div>
       </section>
-      <section className="light-section contact-options">
-        <ContactOptions
-          icon={<FaPhone className="icon" />}
-          title="Phone number"
-          desc="+1 289-236-9000"
-        />
-        <ContactOptions 
-          icon={<MdOutlineMail className="icon" />}
-          title="Email address"
-          desc="contact@zenithiq.info"
-        />
-        <ContactOptions
-          icon={<FaLocationDot className="icon" />}
-          title="Office Location"
-          desc="8140 westside blvd, Fulton, MD"
-        />
+      <section className="light-section">
+        <div className="section-content" style={{ borderTop: "1px solid #d9d9d9" }}>
+          <div className="contact-details">
+            <div className="contact-line">
+              <FaLocationDot className="icon" />
+              <h4>Our Location</h4>
+              <p>
+                8140 westside blvd, Fulton, MD
+              </p>
+            </div>
+            <div className="telephone">
+              <FaPhone className="icon" />
+              <h4>Telephone</h4>
+              <p>+1 289-236-9000</p>
+            </div>
+            <div className="contact-line">
+              <MdOutlineMail className="icon" />
+              <h4>Send Email</h4>
+              <p>
+                <a style={{ textDecoration: "none", color: "#444444" }} href="mailto:info@eitacademy.in">contact@zenithiq.info</a>
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
       <section className="light-section">
-        <div className="section-content get-in-touch">
+        <div className="section-content get-in-touch" style={{ borderTop: "1px solid #d9d9d9" }}>
           <div className="title">
             <h3>Get in Touch</h3>
             <p>We value the connection with our community and are here to assist in any way we can. Feel free to reach out.</p>
