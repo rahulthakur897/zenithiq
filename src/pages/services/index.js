@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Footer, Header } from "../../components";
 import "./style.css";
 
@@ -33,7 +32,7 @@ export default function Home() {
       <Header />
       <section className="services-banner-container">
         <img
-          src={process.env.PUBLIC_URL + "assets/image/Home.png"}
+          src={process.env.PUBLIC_URL + "assets/image/services.png"}
           alt="services img"
         />
         <div className="services-banner-content">

@@ -2,9 +2,6 @@ import { Link } from "react-router-dom";
 import {
   Header,
   Footer,
-  OurSolutions,
-  OurServices,
-  OurPartner,
 } from "../../components";
 import "./style.css";
 
