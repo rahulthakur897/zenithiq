@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./style.css";
 
 export function FormComponent({ formData, handleChange, handleSubmit }) {
@@ -40,7 +40,7 @@ export function FormComponent({ formData, handleChange, handleSubmit }) {
         </div>
       </div>
       <button className="button" type="button" onClick={handleSubmit}>
-        Connect today
+        Connect Today
       </button>
     </div>
   );

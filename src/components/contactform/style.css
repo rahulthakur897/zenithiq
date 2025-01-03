@@ -46,11 +46,11 @@ form {
   
   .button{
     margin: 1rem 6.5rem;
-    background: #022054;
-    border: 2px solid #022054;
+    background: #19272a;
+    border: 2px solid #19272a;
     color: #fff;
     font-size: 1rem;
-    border-radius: 8px;
+    border-radius: 4px;
     font-weight: 700;
     padding: 0.5rem 2rem;
   }

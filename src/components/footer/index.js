@@ -28,15 +28,15 @@ export function Footer() {
         </div>
         <div className="footer-address">
         <div className="footer-socials">
-            <Link to="#" className="footer-social-link">
+            {/* <Link to="#" className="footer-social-link">
               <i className="fa-brands fa-facebook"></i>
             </Link>
-            {/* <Link to="#" className="footer-social-link">
+            <Link to="#" className="footer-social-link">
               <i className="fa-brands fa-twitter"></i>
-            </Link> */}
+            </Link> 
             <Link to="#" className="footer-social-link">
               <i className="fa-brands fa-instagram"></i>
-            </Link>
+            </Link>*/}
             <Link to="#" className="footer-social-link">
               <i className="fa-brands fa-linkedin"></i>
             </Link>

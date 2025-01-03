@@ -1,8 +1,5 @@
 import { Link } from "react-router-dom";
-import {
-  Header,
-  Footer,
-} from "../../components";
+import { Header, Footer } from "../../components";
 import "./style.css";
 
 export default function Home() {
@@ -28,21 +25,19 @@ export default function Home() {
       <section className="dark-section">
         <div className="section-content">
           <h2>OUR APPROACH</h2>
-          <p>
-            Zenithiq excels in implementing and managing Oracle Cloud
-            Applications to enhance supply chain, procurement, customer
-            experience, and financial planning. We streamline critical processes
-            like order-to-cash, procure-to-pay, and financial consolidation
-            while providing effective change management to solve business
-            challenges and drive efficiency across your organization.
-          </p>
-          <div style={{ display: "flex", justifyContent: "space-evenly" }}>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-evenly",
+            }}
+          >
             <img
               src={process.env.PUBLIC_URL + "assets/image/aproach.jpg"}
               alt="banner img"
               style={{ height: "300px", width: "400px" }}
             />
-            <div style={{ paddingTop: "1rem", width: "50%" }}>
+            <div style={{ width: "50%" }}>
               <p>
                 Elevate your business with our expert guidance. We are a
                 Texas-based consultancy firm, dedicated to driving success for
@@ -82,7 +77,7 @@ export default function Home() {
                   className="services-image"
                 />
               </div>
-              <Link to="/services">
+              <Link to="/services#Custom-Software-Solutions">
                 <p className="service-title">Custom Software Solutions</p>
               </Link>
             </div>
@@ -95,7 +90,7 @@ export default function Home() {
                   className="services-image"
                 />
               </div>
-              <Link to="/services">
+              <Link to="/services#IT-Staffing-Services">
                 <p className="service-title">IT Staffing & Services</p>
               </Link>
             </div>
@@ -108,7 +103,7 @@ export default function Home() {
                   className="services-image"
                 />
               </div>
-              <Link to="/services">
+              <Link to="/services#Managed-IT-Services">
                 <p className="service-title">Managed IT Services</p>
               </Link>
             </div>
