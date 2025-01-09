@@ -37,7 +37,7 @@ export function Footer() {
             <Link to="#" className="footer-social-link">
               <i className="fa-brands fa-instagram"></i>
             </Link>*/}
-            <Link to="#" className="footer-social-link">
+            <Link rel="noopener noreferrer" target="_blank" to="https://www.linkedin.com/company/zenithiq-technology-consulting%C2%A0llc/about" className="footer-social-link">
               <i className="fa-brands fa-linkedin"></i>
             </Link>
           </div>
