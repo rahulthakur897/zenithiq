@@ -55,6 +55,8 @@
 .contact-details .telephone {
   border-left: 1px solid #d9d9d9;
   border-right: 1px solid #d9d9d9;
+  border-top: none;
+  border-bottom: none;
   padding: 1rem 6rem;
 }
 .contact-line{
@@ -141,6 +143,10 @@ iframe {
 }
 .contact-details .telephone {
   text-align: center;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  border-left: none;
+  border-right: none;
 }
   .get-in-touch {
     display: block;

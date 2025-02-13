@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Footer, FormComponent, Header } from "../../components";
 import { FaPhone } from "react-icons/fa6";
 import { MdOutlineMail } from "react-icons/md";
@@ -6,33 +6,6 @@ import { FaLocationDot } from "react-icons/fa6";
 import "./style.css";
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    title: "",
-    email: "",
-    organization: "",
-    recruitmentServices: false,
-    directSourceCuration: false,
-    ZenithiqManagedSolutions: false,
-    recruitmentProcessOutsourcing: false,
-    ZenithiqTalentSolutions: false,
-    payrollServices: false,
-    customizableNote: "",
-  });
-
-  const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
-    setFormData({
-      ...formData,
-      [name]: type === "checkbox" ? checked : value,
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(formData);
-  };
   return (
     <main className="contact-page">
       <Header />
@@ -95,11 +68,7 @@ export default function Contact() {
               in any way we can. Feel free to reach out.
             </p>
           </div>
-          <FormComponent
-            formData={formData}
-            handleChange={handleChange}
-            handleSubmit={handleSubmit}
-          />
+          <FormComponent />
         </div>
       </section>
       <section className="loaction">
