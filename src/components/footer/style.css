@@ -97,7 +97,7 @@ footer .footer-container p {
     padding: 1em 0em 0 0em;
   }
   footer .footer-container {
-    display: block;
+    display: flex;
   }
   footer .footer-container > div {
     width: 100%;
