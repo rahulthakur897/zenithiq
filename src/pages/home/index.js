@@ -26,18 +26,14 @@ export default function Home() {
         <div className="section-content">
           <h2>OUR APPROACH</h2>
           <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "space-evenly",
-            }}
+          className="our-approch"
           >
             <img
               src={process.env.PUBLIC_URL + "assets/image/aproach.jpg"}
               alt="banner img"
-              style={{ height: "300px", width: "400px" }}
-            />
-            <div style={{ width: "50%" }}>
+              className="our-approch-img"
+              />
+            <div className="our-approch-content" >
               <p>
                 Elevate your business with our expert guidance. We are a
                 Texas-based consultancy firm, dedicated to driving success for
@@ -46,7 +42,7 @@ export default function Home() {
                 achieving and exceeding its objectives.
               </p>
               <Link to="/contact">
-                <button style={{ padding: "1rem 1.5rem", background: "#fff" }}>
+                <button className="our-approch-button">
                   Contact Us
                 </button>
               </Link>

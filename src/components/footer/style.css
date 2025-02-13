@@ -106,8 +106,12 @@ footer .footer-container p {
   footer .footer-links ul li {
     text-align: left;
   }
+  footer .footer-container .footer-content figure img {
+    padding-left: 1rem;
+  }
   footer .footer-container .footer-socials {
     padding-bottom: 1rem;
+    padding-right: 1rem;
   }
   footer .footer-bar {
     flex-direction: column;
