@@ -38,18 +38,6 @@
     font-weight: 400;
   }
   
-  .services-banner-container>.services-banner-content>ul {
-    color: #fff;
-    display: flex;
-    list-style: none;
-    gap: 1rem;
-    padding-left: 0;
-  }
-  
-  .services-banner-container>.services-banner-content>ul>li>a {
-    color: #fff;
-    text-decoration: none;
-  }
   .agriculture-container {
     display: flex;
     align-items: center;
@@ -97,4 +85,18 @@
   .description {
     font-size: 1rem;
     line-height: 1.5;
+  }
+  @media (max-width: 576px) {
+    .services-banner-container>.services-banner-content>h3{
+      font-size: 32px;
+    }
+   .services-banner-container>.services-banner-content>p {
+      font-size: 16px;
+    }
+    .agriculture-container{
+    display: block;
+    }
+    .services-img{
+      display: none;
+    }
   }

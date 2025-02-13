@@ -64,6 +64,13 @@ export function Header() {
               </Link>
             </li>
             <li>
+            <Link
+                className={activeMenu === "/services" ? "active" : ""}
+                to="/services"
+              >
+              Services</Link>
+            </li>
+            <li>
               <Link
                 className={activeMenu === "/contact" ? "active" : ""}
                 to="/contact"

@@ -44,22 +44,7 @@
   color: white;
   width: 50%;
 }
-.banner-container > .banner-content > .call-to-action {
- display: flex;
- justify-content: center;
-}
-.banner-container > .banner-content > .call-to-action button{
-  margin: 1rem;
-  background: transparent;
-  border: 2px solid #fff;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 600;
-}
-.banner-container > .banner-content > .call-to-action button:hover{
-   background-color: #fff;
-   color: #34657f;
-}
+
 .box-container {
   background-color: white;
   padding: 2rem;
@@ -73,6 +58,23 @@
 .image-grid {
   display: flex;
   justify-content: space-between;
+}
+.our-approch{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.our-approch-img{
+  width: 40%;
+  height: 400px;
+  margin-top: 1rem;
+}
+.our-approch-content{
+  width: 50%;
+}
+.our-approch-button{
+  padding: 1rem 1.5rem;
+  background: #fff;
 }
 
 .services-item {
@@ -148,33 +150,36 @@
 }
 
 @media (max-width: 576px) {
-  .banner-container {
-    height: 300px;
-  }
-
-  .banner-container > .banner-content {
+  .banner-container > .banner-content > p{
+    width: 100%;
     padding: 0 1rem;
   }
 
-  .banner-container > .banner-content > h3 {
-    font-size: 12px;
-  }
-
   .banner-container > .banner-content > h1 {
+    width: 100%;
     font-size: 20px;
+    padding: 0 1rem;
   }
   .banner-container > img {
     height: 300px;
   }
-
-  .section-content {
-    margin-top: 1rem;
+  .our-approch{
+    display: block;
   }
-
-  .dark-section {
-    margin-top: 1rem;
-  }
-
+.our-approch-img{
+  width: 100%;
+}
+.our-approch-content{
+  width: 100%;
+  text-align: center;
+  padding-bottom: 1rem ;
+}
+.image-grid{
+  display: block;
+}
+.services-item{
+  width: 100%;
+}
   .section-content h2 {
     padding: 1rem;
   }
