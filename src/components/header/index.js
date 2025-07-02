@@ -1,85 +1,97 @@
-import React, { useRef } from "react";
-import { Link, useLocation } from "react-router-dom";
+"use client";
+import React, { useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { IoMdMenu } from "react-icons/io";
+import Image from "next/image";
 import "./style.css";
 
 export function Header() {
-  const location = useLocation();
-  const activeMenu = location?.pathname;
-  const menuIconRef = useRef();
+  const pathname = usePathname();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    const activeState = menuIconRef.current.style.display;
-    if (activeState !== "block") {
-      menuIconRef.current.style.display = "block";
-    } else {
-      menuIconRef.current.style.display = "none";
-    }
+    setMenuOpen(!menuOpen);
   };
 
   return (
     <header>
-      <div className="main-continer">
-        <div className="nav-logo">
-          <Link to="/home">
-            <figure>
-              <img
-                src={process.env.PUBLIC_URL + "/assets/image/logo.png"}
-                alt="logo"
-              />
-            </figure>
-          </Link>
-        </div>
-        <nav>
-          <ul className="nav-links">
-          <li>
-              <Link to="/home">Home</Link>
-            </li>
-            <li>
-              <Link to="/services">Services</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div>
-        <div>
-          <IoMdMenu
-            id="menu-icon"
-            src={process.env.PUBLIC_URL + "assets/images/hamburger.png"}
-            alt="hamburger"
-            onClick={() => toggleMenu()}
+      <Link className="nav-logo" href="/">
+        <figure>
+          <Image
+            src="/assets/image/logo.png"
+            alt="logo"
+            width={60}
+            height={50}
           />
-        </div>
-        <div id="mobilemenu" ref={menuIconRef}>
+        </figure>
+      </Link>
+
+      <nav>
+        <ul className="nav-links">
+          <li>
+            <Link href="/" className={pathname === "/" ? "active" : ""}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/services"
+              className={pathname === "/services" ? "active" : ""}
+            >
+              Services
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/contact"
+              className={pathname === "/contact" ? "active" : ""}
+            >
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </nav>
+
+      <div id="mobilemenu">
+        <IoMdMenu
+          id="menu-icon"
+          onClick={toggleMenu}
+          size={30}
+          aria-label="Toggle mobile menu"
+        />
+
+        {menuOpen && (
           <ul>
             <li>
               <Link
-                className={activeMenu === "/home" ? "active" : ""}
-                to="/home"
+                href="/"
+                onClick={() => setMenuOpen(false)}
+                className={pathname === "/" ? "active" : ""}
               >
                 Home
               </Link>
             </li>
             <li>
-            <Link
-                className={activeMenu === "/services" ? "active" : ""}
-                to="/services"
+              <Link
+                href="/services"
+                onClick={() => setMenuOpen(false)}
+                className={pathname === "/services" ? "active" : ""}
               >
-              Services</Link>
+                Services
+              </Link>
             </li>
             <li>
               <Link
-                className={activeMenu === "/contact" ? "active" : ""}
-                to="/contact"
+                href="/contact"
+                onClick={() => setMenuOpen(false)}
+                className={pathname === "/contact" ? "active" : ""}
               >
                 Contact
               </Link>
             </li>
           </ul>
-        </div>
+        )}
       </div>
     </header>
   );

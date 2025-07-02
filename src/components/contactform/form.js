@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from "react";
 import "./style.css";
 
@@ -29,6 +30,7 @@ export function FormComponent() {
     e.preventDefault();
     console.log(formData);
   };
+
   return (
     <div className="form-content">
       <div className="contactform">

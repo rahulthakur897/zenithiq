@@ -1,0 +1,228 @@
+/* General page layout */
+.home-page {
+  margin-top: 75px;
+  width: 100%;
+}
+
+/* Banner styles */
+.banner-container {
+  width: 100%;
+  height: 100vh; /* Full viewport height for a strong hero section */
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  inset: 0; /* shorthand for top: 0; right: 0; bottom: 0; left: 0 */
+}
+
+.banner-content h1 {
+  margin: 0 0 2rem 0;
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+  width: 50%;
+}
+
+.banner-content p {
+  font-size: 1.5rem;
+  color: white;
+  width: 50%;
+}
+
+/* Approach section */
+.our-approch {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+
+.our-approch-img {
+  width: 40%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.our-approch-content {
+  width: 50%;
+}
+
+.our-approch-button {
+  padding: 1rem 1.5rem;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: 2px solid #000;
+  font-weight: 600;
+}
+
+.our-approch-button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Services section */
+.image-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.services-item {
+  width: 30%;
+  text-align: center;
+}
+
+.services-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.services-background {
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  top: 10px;
+  left: -10px;
+  z-index: 1;
+  transition: background-color 0.3s, top 0.3s, left 0.3s;
+}
+
+.services-image {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  z-index: 2;
+  transition: transform 0.3s;
+}
+
+.services-container:hover .services-image {
+  transform: translate(20px, -20px);
+}
+
+.services-container:hover .services-background {
+  background-color: #2ca6a2;
+}
+
+.service-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.services-item a {
+  text-decoration: none;
+  color: #222;
+}
+
+.services-item a p {
+  padding: 1rem;
+}
+
+/* Client section (example placeholder) */
+.client-section {
+  background-color: #022054;
+}
+
+.client-section h2 {
+  color: #fff;
+}
+
+.client-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.client-container > .box-container {
+  margin-bottom: 0;
+}
+
+/* Box container example */
+.box-container {
+  background-color: white;
+  padding: 2rem;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(206, 42, 41, 0.2);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .banner-content h1,
+  .banner-content p {
+    width: 90%;
+  }
+
+  .our-approch {
+    flex-direction: column;
+  }
+
+  .our-approch-img,
+  .our-approch-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .services-container {
+    width: 80%;
+  }
+
+  .image-grid {
+    flex-direction: column;
+  }
+
+  .services-item {
+    width: 100%;
+  }
+
+  .client-container {
+    flex-direction: column;
+  }
+
+  .client-container > .box-container {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner-content h1 {
+    font-size: 24px;
+  }
+
+  .banner-content p {
+    font-size: 1.2rem;
+  }
+
+  .our-approch-img {
+    height: auto;
+  }
+
+  .our-approch-content > p{
+    padding: 0;
+    text-align: justify;
+  }
+
+  .services-image {
+    height: 200px;
+  }
+}

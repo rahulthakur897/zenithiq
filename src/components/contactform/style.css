@@ -32,17 +32,20 @@ form {
     font-size: 1rem;
     outline: none;
   }
+  
   input::placeholder,
   textarea::placeholder {
     color: #aaa;
     font-style: italic;
   }
+  
   textarea {
     border: ipx solid #000;
     height: 200px;
   }
+  
   .button{
-    margin-left: 15rem;
+    margin: 1rem 6.5rem;
     background: #19272a;
     border: 2px solid #19272a;
     color: #fff;
@@ -50,7 +53,6 @@ form {
     border-radius: 4px;
     font-weight: 700;
     padding: 0.5rem 2rem;
-    white-space: nowrap;
   }
   @media (max-width: 576px) {
     .contactform{
@@ -60,10 +62,7 @@ form {
       width: 100%;
     }
     .form-container{
-      width: 100%;
+      width: 85%;
       padding: 1rem;
-    }
-    .button{
-      margin-left: 5rem;
     }
   }
