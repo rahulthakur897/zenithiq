@@ -79,7 +79,7 @@ export default function Home() {
               <figure className="services-container">
                 <div className="services-background"></div>
                 <img
-                  src="/assets/image/Service-2.jpg"
+                  src="/assets/image/service-2.jpg"
                   alt="IT Staffing & Services"
                   className="services-image"
                 />
@@ -93,7 +93,7 @@ export default function Home() {
               <figure className="services-container">
                 <div className="services-background"></div>
                 <img
-                  src="/assets/image/Service-3.jpg"
+                  src="/assets/image/service-3.jpg"
                   alt="Managed IT Services"
                   className="services-image"
                 />
